@@ -14,6 +14,12 @@
 		4A7F3AD1276F9EE4005D361F /* ExCloud.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F3ACF276F9EE4005D361F /* ExCloud.xcdatamodeld */; };
 		4A7F3AD3276F9EE5005D361F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A7F3AD2276F9EE5005D361F /* Assets.xcassets */; };
 		4A7F3AD6276F9EE5005D361F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7F3AD4276F9EE5005D361F /* LaunchScreen.storyboard */; };
+		4A7F3AE0276F9FC6005D361F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7F3ADF276F9FC6005D361F /* CloudKit.framework */; };
+		4A7F3AE3276FA2D8005D361F /* CloudManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F3AE2276FA2D8005D361F /* CloudManager.swift */; };
+		4A7F3AE5276FA313005D361F /* TasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F3AE4276FA313005D361F /* TasksTableViewController.swift */; };
+		4A7F3AE7276FA335005D361F /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F3AE6276FA335005D361F /* TaskCell.swift */; };
+		4A7F3AE9276FA7A8005D361F /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F3AE8276FA7A8005D361F /* Date+Extension.swift */; };
+		4A7F3B0E27723762005D361F /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F3B0D27723762005D361F /* AddTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,13 @@
 		4A7F3AD2276F9EE5005D361F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A7F3AD5276F9EE5005D361F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A7F3AD7276F9EE5005D361F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A7F3ADD276F9FA8005D361F /* ExCloud.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExCloud.entitlements; sourceTree = "<group>"; };
+		4A7F3ADF276F9FC6005D361F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		4A7F3AE2276FA2D8005D361F /* CloudManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudManager.swift; sourceTree = "<group>"; };
+		4A7F3AE4276FA313005D361F /* TasksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
+		4A7F3AE6276FA335005D361F /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		4A7F3AE8276FA7A8005D361F /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		4A7F3B0D27723762005D361F /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A7F3AE0276F9FC6005D361F /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +58,7 @@
 			children = (
 				4A7F3AC5276F9EE4005D361F /* ExCloud */,
 				4A7F3AC4276F9EE4005D361F /* Products */,
+				4A7F3ADE276F9FC6005D361F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +73,38 @@
 		4A7F3AC5276F9EE4005D361F /* ExCloud */ = {
 			isa = PBXGroup;
 			children = (
+				4A7F3AE1276FA2CD005D361F /* iCloud */,
+				4A7F3ADD276F9FA8005D361F /* ExCloud.entitlements */,
 				4A7F3AC6276F9EE4005D361F /* AppDelegate.swift */,
 				4A7F3AC8276F9EE4005D361F /* SceneDelegate.swift */,
 				4A7F3ACA276F9EE4005D361F /* ViewController.swift */,
+				4A7F3B0D27723762005D361F /* AddTaskViewController.swift */,
+				4A7F3AE4276FA313005D361F /* TasksTableViewController.swift */,
+				4A7F3AE6276FA335005D361F /* TaskCell.swift */,
 				4A7F3ACC276F9EE4005D361F /* Main.storyboard */,
+				4A7F3AE8276FA7A8005D361F /* Date+Extension.swift */,
 				4A7F3AD2276F9EE5005D361F /* Assets.xcassets */,
 				4A7F3AD4276F9EE5005D361F /* LaunchScreen.storyboard */,
 				4A7F3AD7276F9EE5005D361F /* Info.plist */,
 				4A7F3ACF276F9EE4005D361F /* ExCloud.xcdatamodeld */,
 			);
 			path = ExCloud;
+			sourceTree = "<group>";
+		};
+		4A7F3ADE276F9FC6005D361F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A7F3ADF276F9FC6005D361F /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A7F3AE1276FA2CD005D361F /* iCloud */ = {
+			isa = PBXGroup;
+			children = (
+				4A7F3AE2276FA2D8005D361F /* CloudManager.swift */,
+			);
+			path = iCloud;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +178,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A7F3AE5276FA313005D361F /* TasksTableViewController.swift in Sources */,
+				4A7F3AE7276FA335005D361F /* TaskCell.swift in Sources */,
+				4A7F3AE3276FA2D8005D361F /* CloudManager.swift in Sources */,
 				4A7F3AD1276F9EE4005D361F /* ExCloud.xcdatamodeld in Sources */,
 				4A7F3ACB276F9EE4005D361F /* ViewController.swift in Sources */,
+				4A7F3AE9276FA7A8005D361F /* Date+Extension.swift in Sources */,
 				4A7F3AC7276F9EE4005D361F /* AppDelegate.swift in Sources */,
+				4A7F3B0E27723762005D361F /* AddTaskViewController.swift in Sources */,
 				4A7F3AC9276F9EE4005D361F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +333,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExCloud/ExCloud.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SS7U83UJNK;
@@ -308,6 +352,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jake.ExCloud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,9 +364,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExCloud/ExCloud.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SS7U83UJNK;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExCloud/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -336,6 +383,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jake.ExCloud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
